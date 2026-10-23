@@ -1,0 +1,11 @@
+{
+  "name": "actovault",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.19.0 <25" },
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "check:repository": "python3 scripts/check_repository.py"
+  }
+}

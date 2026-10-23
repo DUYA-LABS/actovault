@@ -25,7 +25,7 @@ Authentication and trusted resource ownership cross into the enforcement boundar
 
 ## Limits
 
-No implementation exists yet. Even after implementation, protected actions must pass through the controlled executor. An LLM response proxy is not sufficient when the agent has independent database, API, browser, or shell access.
+Only Core assessment exists today. It makes decisions but neither authenticates callers nor executes actions. Its caller context and ownership resolver must be supplied by a trusted host; model output cannot establish identity. Its inputs are parsed JSON-like data, not a sandbox for hostile JavaScript objects. Protected actions must eventually pass through a controlled executor. An LLM response proxy is not sufficient when the agent has independent database, API, browser, or shell access.
 
 Testing cannot establish absence of all vulnerabilities. Prompt-injection detection is not an authorization boundary. Policy correctness and authentication correctness remain operator responsibilities.
 

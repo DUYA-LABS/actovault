@@ -7,7 +7,7 @@ Actovault is at the specification/scaffold stage. Read the [brief](docs/PROJECT_
 1. Open an issue describing the problem, observable result, and proposed scope.
 2. Discuss contract or security-boundary changes before implementing them.
 3. Create a focused branch and pull request.
-4. Run `python scripts/check_repository.py` with Python 3.11+.
+4. Run `npm test` with Node.js 24.19.0 and `python scripts/check_repository.py` with Python 3.11+. No npm install is required.
 5. Include relevant evidence and update affected documentation.
 
 A maintainer should review security-sensitive changes before merging. Do not submit production credentials or real customer data.

@@ -1,6 +1,8 @@
 # Architecture
 
-Status: proposed design; component directories contain documentation only.
+Status: Core contracts and tenant policy are implemented experimentally. Verify, Runtime, storage adapters, approvals, and durable execution remain proposed designs.
+
+Core uses Node.js native TypeScript execution with zero third-party dependencies. Run `npm test` for runtime boundary tests. Static type checking is not configured yet; add a pinned compiler and Node type definitions before package publication.
 
 ## Dependency direction
 

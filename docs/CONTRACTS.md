@@ -45,6 +45,12 @@ Required fields: eventId, schemaVersion, actionId, policyVersion, timestamp, sta
 
 Stages distinguish decision, execution, and compensation. Execution states should distinguish not_started, started, succeeded, failed, and unknown. Decision events must not imply successful execution.
 
+## Current Core API
+
+`assessAction(authenticatedContext, toolRequest, resolveOwnership)` validates and snapshots inputs, resolves ownership, and returns an assessment. The trusted host supplies identity and the resolver; this API does not authenticate or execute. `evaluateTenantPolicy(action)` validates an already assembled action and evaluates the pinned tenant policy.
+
+Decisions currently include `status: evaluated | error`, with errors always denied. Successful assessments include a frozen action; denied assessments omit it. Approval, agent identity, idempotency keys, verification results, and execution events remain future work. Unsupported tool-request fields are rejected rather than ignored.
+
 ## Compatibility
 
 Version serialized formats explicitly. Add compatibility checks before publishing packages. No cryptographic authenticity, append-only durability, or remote attestation is implied by these field definitions.

@@ -12,8 +12,9 @@ This is a sequence of evidence-based milestones, not delivery dates.
 
 ## M1 — Local vertical slice
 
-- [ ] Choose and pin the TypeScript toolchain
-- [ ] Implement validated Core contracts and deterministic tenant policy
+- [x] Pin Node.js for native TypeScript execution (static type checking remains pending)
+- [x] Implement validated Core action contracts and deterministic tenant policy
+- [ ] Add pinned static type checking before publishing packages
 - [ ] Implement safe and deliberately unsafe local adapters
 - [ ] Implement observable Verify scenarios
 - [ ] Implement Runtime allow/deny execution

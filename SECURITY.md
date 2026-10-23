@@ -2,7 +2,7 @@
 
 ## Current status
 
-Actovault is a specification and scaffold. No release is currently supported for production security use.
+Actovault contains an experimental Core policy implementation and module specifications. No release is currently supported for production security use.
 
 ## Reporting a vulnerability
 
