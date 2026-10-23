@@ -2,7 +2,7 @@
 
 ## Project state
 
-This repository is a specification/scaffold. Do not describe planned modules as implemented. Read README.md, docs/ARCHITECTURE.md, docs/CONTRACTS.md, docs/THREAT_MODEL.md, and docs/MVP_ACCEPTANCE.md before implementation.
+Core now contains an experimental tenant-policy implementation. Verify and Runtime remain specifications. Do not describe planned modules as implemented. Read README.md, docs/ARCHITECTURE.md, docs/CONTRACTS.md, docs/THREAT_MODEL.md, and docs/MVP_ACCEPTANCE.md before implementation.
 
 ## Scope
 

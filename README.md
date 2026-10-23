@@ -4,7 +4,7 @@
 
 Actovault is an early-stage, MIT-licensed project for verifying critical application rules before deployment and enforcing rules when AI agents execute supported actions.
 
-**Status: specification and repository scaffold. There is no working SDK, verification engine, or production runtime yet.** Names and interfaces may change. Do not use this scaffold as a security control.
+**Status: experimental Core policy implementation plus specifications for Verify and Runtime.** There is no verification engine or production executor yet. Names and interfaces may change. Do not use this prototype as a production security control.
 
 ## Two modules, one foundation
 
@@ -39,12 +39,16 @@ The MVP uses deterministic rules and local fixtures. It does not require an LLM 
 
 ## Repository layout
 
-- `packages/core/`: planned contracts and policy evaluation
+- `packages/core/`: implemented draft contracts and deterministic tenant policy
 - `packages/verify/`: planned verification runner
 - `packages/runtime/`: planned controlled executor
 - `examples/tenant-demo/`: first integration specification and synthetic fixtures
 - `docs/`: design and security boundaries
 - `scripts/`: repository checks
+
+## Run Core tests
+
+Use Node.js 24.19.0 (pinned in `.nvmrc`), then run `npm test`. No dependency installation or model API key is required. Node executes the TypeScript source using native type stripping; this is runtime testing, not static type checking. See [Core usage](packages/core/README.md).
 
 ## Repository checks
 
@@ -54,7 +58,7 @@ Install Python 3.11 or newer, clone this repository, then run:
 python scripts/check_repository.py
 ```
 
-This checks repository files, local Markdown file links, and JSON fixtures. It does **not** test an implemented security engine. No application installation or execution commands are available yet.
+This checks repository files, local Markdown file links, and JSON fixtures. Core behavior is tested separately with `npm test`. No application demo or tool-execution command is available yet.
 
 ## Security boundaries
 

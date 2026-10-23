@@ -12,7 +12,7 @@ Developers will adopt a small, inspectable tool that reproduces access violation
 
 ## First scope
 
-- TypeScript is the proposed implementation language; no toolchain has been selected or installed yet.
+- Core uses TypeScript executed directly by pinned Node.js 24.19.0. It has no third-party dependencies; native type stripping does not perform static type checking.
 - Local synthetic tenant data and deterministic policy checks.
 - One read tool and one update tool.
 - Verify checks against an explicitly unsafe adapter.
@@ -30,4 +30,4 @@ A new developer can run the documented demo without maintainer help, understand 
 
 ## Open decisions
 
-Select and document the Node/TypeScript toolchain before implementation. Define durable execution storage before promising retry safety. Choose one real design partner workflow before adding integrations.
+Add a pinned static TypeScript checker before publishing packages. Define durable execution storage before promising retry safety. Choose one real design partner workflow before adding integrations.
