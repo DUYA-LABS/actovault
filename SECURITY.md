@@ -9,7 +9,7 @@ Actovault contains an experimental Core policy implementation and module specifi
 Do not disclose exploitable details, credentials, customer data, or private infrastructure in public issues.
 
 Check the repository's Security tab for a **Report a vulnerability** option:
-https://github.com/Athurlux/actovault/security
+https://github.com/DUYA-LABS/actovault/security
 
 If private reporting is unavailable, open a minimal issue titled "Request private security contact" without technical exploit details. The maintainer must establish a private channel before details are shared. No security email address or response-time commitment has been established yet.
 
