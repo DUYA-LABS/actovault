@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1-draft",
+  "synthetic": true,
+  "tenants": [
+    {
+      "id": "tenant-a",
+      "name": "Demo A"
+    },
+    {
+      "id": "tenant-b",
+      "name": "Demo B"
+    }
+  ],
+  "principals": [
+    {
+      "id": "user-a",
+      "tenantId": "tenant-a"
+    },
+    {
+      "id": "user-b",
+      "tenantId": "tenant-b"
+    }
+  ],
+  "records": [
+    {
+      "id": "record-a",
+      "tenantId": "tenant-a",
+      "value": "Synthetic record A"
+    },
+    {
+      "id": "record-b",
+      "tenantId": "tenant-b",
+      "value": "Synthetic record B"
+    }
+  ]
+}
